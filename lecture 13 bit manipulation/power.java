@@ -1,0 +1,9 @@
+public class power{
+    public static boolean ispowweroftwo(int n){
+        return (n&(n-1))==0;
+    }
+    
+    public static void main(String args[]){
+   System.out.println(ispowweroftwo(8));
+    }
+}

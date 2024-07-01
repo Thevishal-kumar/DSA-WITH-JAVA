@@ -1,0 +1,2 @@
+
+            substr += str.charAt(i);
