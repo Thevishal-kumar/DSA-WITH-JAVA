@@ -3,12 +3,12 @@ public class problem4{
         if(n==1){
             return 1;
         }
-        int snm1=sum(n-1);
+        // int snm1=sum(n-1);
         int sn= n+ sum(n-1);
         return sn;
     }
     public static void main(String args[]){
-            int n= 5;
+            int n= 10;
             System.out.print(sum(n));
     }
 }

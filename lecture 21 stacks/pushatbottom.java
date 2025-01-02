@@ -8,8 +8,11 @@ public class pushatbottom {
             return;
         }
         int top = s.pop();
+        System.out.println("intial"+top);
         pushAtBottom(s, data);
+        System.out.println("final"+top);
         s.push(top);
+        System.out.println("finally                 "+top);
 
     }
     public static void main(String args[]){

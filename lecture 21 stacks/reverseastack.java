@@ -6,8 +6,11 @@ public class reverseastack {
             s.push(data);
             return;
         }
+        System.out.println("push-stack"+" "+" "+s);
         int top = s.pop();
+          System.out.println("push-After pop"+" "+top +" "+s);
         pushAtBottom(s, data);
+          System.out.println("push-after push at bottom"+" "+top+" "+s);
         s.push(top);
     }
 
@@ -16,9 +19,13 @@ public class reverseastack {
         if(s.isEmpty()){
             return;
         }
+        System.out.println("stack"+" "+" "+s);
         int top = s.pop();
+        System.out.println("After pop"+" "+top +" "+s);
         reverseStack(s);
+        System.out.println("after reverse"+" "+s);
         pushAtBottom(s, top);
+         System.out.println("after push at bottom"+" "+top+" "+s);
     }
 
     public static void printStack(Stack<Integer>s){
